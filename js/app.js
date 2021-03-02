@@ -89,9 +89,12 @@ for(let i=0;i<4;i++){
         alert('too high');
         document.getElementById("siblings").innerText=('I have 3 siblings your answer is not correct');
         }
+        if (i==3){
+            alert('correct answer is 3');
+        }
     }   
 }
-alert('correct answer is 3');
+
 
 let hobby=['yoga','driving','watching movies'];
 
@@ -112,9 +115,11 @@ let hobby=['yoga','driving','watching movies'];
     document.getElementById("hobbies").innerText=('my hobbies are yoga, driving, watching movies  your answer is not correct');
     
     }
+    if(i==5){
+        alert('correct answers are: yoga, driving, watching movies');
     }
-    alert('correct answers are: yoga, driving, watching movies' );
-
+}
+   
 alert (userName+' hope you enjoyed playing with us ');
 
 alert ('your score is '+ score);
