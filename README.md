@@ -11,3 +11,6 @@
   - [codefellows style guide](https://codefellows.github.io/code-201-guide/curriculum/class-02/project_setup)
 
 
+>We are working on Lab: 04 - Pair Programming:
+* Driver: Omar Alhalaika
+* Navigator: Bayan Alkhatib
