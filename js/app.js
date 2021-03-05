@@ -96,61 +96,69 @@ question5(barthday);
 
 
 
-// for(let i=0;i<4;i++){
 
-//     let Siblings=parseInt(prompt('can you guess how many siblings I have?'));
-//     //console.log(Siblings);
+    //console.log(Siblings);
 
-//     if(Siblings===3){
-//         alert('congrates your answer is correct'); 
-//         score+=1;
-//         document.getElementById("siblings").innerText=('I have 3 siblings your answer is correct');
-//         break;
+    function siblings(sixthInput) {
+        for(let i=0;i<4;i++){
 
-//     }else{
+            let Siblings=parseInt(prompt('can you guess how many siblings I have?'));
+
+            if(Siblings===3){
+        alert('congrates your answer is correct'); 
+        score+=1;
+        document.getElementById("siblings").innerText=('I have 3 siblings your answer is correct');
+        break;
+
+    }else{
         
-//         if(Siblings<3){
-//             alert('too low');
-//             document.getElementById("siblings").innerText=('I have 3 siblings your answer is not correct');
+        if(Siblings<3){
+            alert('too low');
+            document.getElementById("siblings").innerText=('I have 3 siblings your answer is not correct');
 
-//         }else{
-//         alert('too high');
-//         document.getElementById("siblings").innerText=('I have 3 siblings your answer is not correct');
-//         }
-//         if (i==3){
-//             alert('correct answer is 3');
-//         }
-//     }   
-// }
+        }else{
+        alert('too high');
+        document.getElementById("siblings").innerText=('I have 3 siblings your answer is not correct');
+        }
+        if (i==3){
+            alert('correct answer is 3');
+        }
+    }   
+}
+}
+siblings();
 
-
-// let hobby=['yoga','driving','watching movies'];
-
-//  for (let i=0;i<6;i++){
-//      let hobbies=prompt('my hobbies are');
-//      //console.log(hobbies);
-
-//      for(let j=0;j<3;j++){
-
-//      if(hobbies.toLowerCase()===hobby[j]){
-//         alert('congrates your answer is correct');
-//         score+=1;
-//         document.getElementById("hobbies").innerText=('my hobbies are yoga, driving, watching movies  your answer is correct');
-//         i=6;
-//     }
-//     }if(i!=6){ 
-//     alert( 'your answer is not correct please try again');
-//     document.getElementById("hobbies").innerText=('my hobbies are yoga, driving, watching movies  your answer is not correct');
+function hobby(seventhInput) {
     
-//     }
-//     if(i==5){
-//         alert('correct answers are: yoga, driving, watching movies');
-//     }
-// }
-   
-// alert (userName+' hope you enjoyed playing with us ');
+let hobby=['yoga','driving','watching movies'];
 
-// alert ('your score is '+ score);
+ for (let i=0;i<6;i++){
+     let hobbies=prompt('my hobbies are');
+     //console.log(hobbies);
+
+     for(let j=0;j<3;j++){
+
+     if(hobbies.toLowerCase()===hobby[j]){
+        alert('congrates your answer is correct');
+        score+=1;
+        document.getElementById("hobbies").innerText=('my hobbies are yoga, driving, watching movies  your answer is correct');
+        i=6;
+    }
+    }if(i!=6){ 
+    alert( 'your answer is not correct please try again');
+    document.getElementById("hobbies").innerText=('my hobbies are yoga, driving, watching movies  your answer is not correct');
+    
+    }
+    if(i==5){
+        alert('correct answers are: yoga, driving, watching movies');
+    }
+}
+}
+
+hobby();
+alert (userName+' hope you enjoyed playing with us ');
+
+alert ('your score is '+ score);
 
 
 
